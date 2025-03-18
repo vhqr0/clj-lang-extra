@@ -6,12 +6,14 @@
 (defn str->int [^String s] (Long/parseLong s))
 (defn str->float [^String s] (Double/parseDouble s))
 (defn hex->int [^String s] (Long/parseLong s 16))
+(defn int->hex [^long i] (Long/toHexString i))
 
 ^:rct/test
 (comment
   (str->int "123") ; => 123
   (str->float "123.4") ; => 123.4
   (hex->int "ff") ; => 255
+  (int->hex 255) ; => "ff"
   )
 
 ;;; inst utils

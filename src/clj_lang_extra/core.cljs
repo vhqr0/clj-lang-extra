@@ -5,11 +5,13 @@
 (defn str->int [s] (js/parseInt s))
 (defn str->float [s] (js/parseFloat s))
 (defn hex->int [s] (js/parseInt s 16))
+(defn int->hex [i] (.toString i 16))
 
 (comment
   (str->int "123") ; => 123
   (str->float "123.4") ; => 123.4
   (hex->int "ff") ; => 255
+  (int->hex 255) ; => "ff"
   )
 
 ;;; inst utils
