@@ -1,6 +1,9 @@
 (ns clj-lang-extra.core-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [clojure.test :refer [run-tests deftest testing is]]
             [clj-lang-extra.core :as sut]))
+
+(defn -main [& _]
+  (run-tests 'clj-lang-extra.core-test))
 
 (deftest int-utils-test
   (testing "Parse int string"

@@ -1,0 +1,12 @@
+* clj-lang-extra
+
+** dev
+
+.dir-locals.el example:
+
+#+begin_src elisp
+  ;; clj+cljs
+  ((nil . ((cider-clojure-cli-aliases . ":dev:cljs:cljs-dev"))))
+  ;; clj only
+  ((nil . ((cider-clojure-cli-aliases . ":dev"))))
+#+end_src
