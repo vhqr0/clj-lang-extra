@@ -1,4 +1,4 @@
-(ns clj-lang-extra.cljs-test
+(ns clj-lang-extra.cljs-main-test
   (:require [cljs.test :refer-macros [run-tests]]
             clj-lang-extra.core-test))
 
