@@ -1,0 +1,6 @@
+* 1.0.0
+
+- Init project.
+- Add int utils: *parse-bin* *parse-hex* *bin-str* *hex-str*.
+- Add inst utils: *now* *ms->inst*.
+- Add ex utils: *ex?* *ex-info?* *try-catch*.
