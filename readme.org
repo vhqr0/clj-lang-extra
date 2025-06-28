@@ -1,5 +1,38 @@
 * clj-lang-extra
 
+** api
+
+*** int utils
+
+Related core fn: *parse-long* *parse-double* *str*.
+
+- *parse-bin* Convert bin string to long.
+- *parse-hex* Convert hex string to long.
+- *bin-str* Convert long to bin string.
+- *hex-str* Convert long to hex string.
+
+*** inst utils
+
+Related core fn: *now* *ms->inst*.
+
+- *now* No args, return inst of current time.
+- *ms->inst* Convert ms in long to inst.
+
+*** ex utils
+
+Related core fn: *ex-info* *ex-data* *ex-message* *ex-cause*.
+
+- *ex?* Return true if arg is an exception.
+- *ex-info?* Return true if arg is an exception info.
+- *try-catch* Wrap a funcall with try-catch, see the example.
+
+*try-catch* example:
+
+#+begin_src clojure
+  (try-catch inc 1) ; => [2 nil]
+  (try-catch inc nil) ; => [nil #error {...}]
+#+end_src
+
 ** dev
 
 .dir-locals.el example:
