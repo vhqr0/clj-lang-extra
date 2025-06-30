@@ -2,9 +2,6 @@
   (:require [clojure.test :refer [run-tests deftest testing is]]
             [clj-lang-extra.core :as sut]))
 
-(defn -main [& _]
-  (run-tests 'clj-lang-extra.core-test))
-
 (deftest int-utils-test
   (testing "Parse int string"
     (is (= 11 (sut/parse-bin "1011")))
@@ -21,3 +18,6 @@
   (is (sut/ex? (ex-info "" {})))
   (is (sut/ex-info? (ex-info "" {})))
   (is (nil? (first (sut/try-catch #(throw (ex-info "" {})))))))
+
+(defn -main [& _]
+  (run-tests 'clj-lang-extra.core-test))
