@@ -18,6 +18,3 @@
   (is (sut/ex? (ex-info "" {})))
   (is (sut/ex-info? (ex-info "" {})))
   (is (nil? (first (sut/try-catch #(throw (ex-info "" {})))))))
-
-(defn -main [& _]
-  (run-tests 'clj-lang-extra.core-test))

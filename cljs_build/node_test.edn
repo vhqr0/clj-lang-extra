@@ -1,4 +1,4 @@
-{:main          clj-lang-extra.core-test-main
+{:main          clj-lang-extra.test-main
  :output-dir    "target/cljs_build_node_test"
  :output-to     "target/cljs_build_node_test/main.js"
  :optimizations :simple

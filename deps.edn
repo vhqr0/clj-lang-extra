@@ -1,7 +1,7 @@
 {:paths   ["src"]
  :deps    {org.clojure/clojure {:mvn/version "1.12.1"}}
  :aliases {:dev       {:extra-paths ["test"]}
-           :test      {:main-opts ["-m" "clj-lang-extra.core-test"]}
+           :test      {:main-opts ["-m" "clj-lang-extra.test-main"]}
            ;; - cljs repl | :dev:cljs:cljs-dev
            ;; - cljs test | :dev:cljs:cljs-test
            :cljs      {:extra-deps {org.clojure/clojurescript {:mvn/version "1.11.132"}}}
